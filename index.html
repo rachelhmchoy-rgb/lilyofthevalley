@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lily of the Valley ~ ASCII Garden</title>
+    <title>For Nick ♥</title>
     <style>
         body {
             background: black;
@@ -26,7 +26,6 @@
             margin: 0;
             line-height: 1.2;
             white-space: pre;
-            overflow-x: auto;
         }
         
         .center {
@@ -40,24 +39,63 @@
         
         .box {
             border: 1px solid white;
-            padding: 15px;
+            padding: 20px;
             margin: 20px 0;
+            display: none;
         }
         
-        .double-box {
+        .box.active {
+            display: block;
+            animation: fadeIn 0.5s;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .click-prompt {
             border: 3px double white;
             padding: 20px;
             margin: 20px 0;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s;
         }
         
-        h1, h2 {
-            font-family: 'Courier New', monospace;
-            font-weight: normal;
+        .click-prompt:hover {
+            background: white;
+            color: black;
         }
         
-        a {
+        .navigation {
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        button {
+            background: black;
             color: white;
-            text-decoration: underline;
+            border: 2px solid white;
+            padding: 10px 20px;
+            font-family: 'Courier New', monospace;
+            cursor: pointer;
+            margin: 5px;
+            transition: all 0.3s;
+        }
+        
+        button:hover {
+            background: white;
+            color: black;
+        }
+        
+        button:disabled {
+            opacity: 0.3;
+            cursor: not-allowed;
+        }
+        
+        .hidden {
+            display: none;
         }
         
         @media (max-width: 600px) {
@@ -81,7 +119,8 @@
 <pre>
  _______________________________________________
 |                                               |
-|   ✿ ･ﾟ LILY OF THE VALLEY FUN FACTS ･ﾟ✿      |
+|        ✿ A LOVE LETTER DISGUISED AS          |
+|          LILY OF THE VALLEY FUN FACTS ✿      |
 |_______________________________________________|
 </pre>
         </div>
@@ -112,196 +151,520 @@
 </pre>
         </div>
 
-        <div class="double-box">
-            <div class="center">
-<pre>
- ╔══════════════════════════════════════════╗
- ║    THE MAY 1ST ASCII MUGUET TRADITION    ║
- ╚══════════════════════════════════════════╝
-</pre>
-            </div>
+        <div id="intro" class="center">
+            <p>Nick,</p>
             <p>
-In France, May 1st is a special day called "La Fête du Muguet" 
-(The Lily of the Valley Festival). Since 1561, people have been 
-exchanging these delicate flowers for good luck!
+I've written thousands of words about you. This is just another attempt
+to capture what feels unbearably precious—you, and us, and the way
+loving you has become as constant as breathing.
             </p>
             <p>
-On this day, street vendors set up little stands all over Paris 
-and other French towns, selling fresh bunches of muguet. It's 
-one of the only days anyone can sell flowers without a license!
-            </p>
-            <p>
-The tradition is simple: give someone a sprig of lily of the 
-valley, and they'll have happiness and good fortune for the 
-whole year. ♥
-            </p>
-            <div class="center">
-<pre>
-    🌸 → 😊 = Good Luck All Year!
-    
-         .---.
-        /     \
-       | () () |    "Bonne chance!"
-        \  ^  /     (Good luck!)
-         |||||
-         |||||
-</pre>
-            </div>
-        </div>
-
-        <div class="divider">
-<pre>
-════════════════════════════════════════════
-</pre>
-        </div>
-
-        <div class="box">
-            <div class="center">
-<pre>★ ROYAL WEDDING BOUQUET ★</pre></div>
-<pre>
-    .-""""-.
-   /        \
-  |  ♥ ♥ ♥  |
-   \ ♥___♥ /
-    `.___.´
-</pre>
-            <p>
-Kate Middleton carried lily of the valley in her bridal 
-bouquet when she married Prince William in 2011! 
-It's been a favorite of royalty for centuries.
+Click below to read about lily of the valley.<br>
+(But really, every fact is just another way of saying I love you.)
             </p>
         </div>
 
-        <div class="box">
-            <div class="center">
-<pre>★ DANGEROUS BEAUTY ★</pre></div>
-<pre>
-    ☠️  CAUTION!  ☠️
-    \_____________/
-</pre>
-            <p>
-Don't let the sweet appearance fool you! Lily of the 
-valley is HIGHLY TOXIC. Every part contains cardiac 
-glycosides that can cause serious harm. 
-            </p>
-            <p>
-» Look with your eyes, not your mouth! «
-            </p>
-        </div>
-
-        <div class="box">
-            <div class="center">
-<pre>★ PERFUME POWERHOUSE ★</pre></div>
-<pre>
-    ___
-   /   \~~~
-  |  o  |
-   \___/
-   Fancy!
-</pre>
-            <p>
-The flower has one of the most beloved scents in the 
-perfume world! Its sweet, fresh aroma is nearly 
-impossible to extract naturally, so perfumers usually 
-recreate it synthetically. Dior, Chanel, and Guerlain 
-have all made famous muguet perfumes.
-            </p>
-        </div>
-
-        <div class="box">
-            <div class="center">
-<pre>★ LANGUAGE OF FLOWERS ★</pre></div>
-<pre>
-    ♥♥♥♥♥♥♥♥
-   ♥  YOU  ♥
-   ♥ COMPLETE ♥
-   ♥   ME   ♥
-    ♥♥♥♥♥♥♥♥
-</pre>
-            <p>
-In Victorian flower language (floriography), lily of 
-the valley means "you've made my life complete" and 
-symbolizes the return of happiness, sweetness, and 
-humility. It's also associated with motherhood!
-            </p>
-        </div>
-
-        <div class="box">
-            <div class="center">
-<pre>★ TOUGH LITTLE SURVIVOR ★</pre></div>
-<pre>
-    ___________
-   |  SHADE?  |
-   |  NO PROB! |
-    ¯¯¯|___|¯¯¯
-       |   |
-      /|   |\
-     💪   💪
-</pre>
-            <p>
-This delicate-looking flower is actually super hardy! 
-It spreads through underground rhizomes (root stems) 
-and can take over a shady garden where other plants 
-struggle. It's a Zone 2-7 plant, meaning it can 
-survive some seriously cold winters!
-            </p>
-        </div>
-
-        <div class="box">
-            <div class="center">
-<pre>★ BELL-SHAPED BEAUTIES ★</pre></div>
-<pre>
-    ding! ♪
-     \|/
-      O    Each stem has
-     / \   5-15 tiny bells!
-    O   O
-</pre>
-            <p>
-Each stem produces 5-15 tiny bell-shaped flowers. 
-They bloom in late spring and are usually white, 
-though there's a rare pink variety called 
-"Rosea." The flowers only last 3-4 weeks!
-            </p>
-        </div>
-
-        <div class="divider">
-<pre>
-════════════════════════════════════════════
-</pre>
-        </div>
-
-        <div class="center">
-<pre>
-    ･ﾟ✧･ﾟ: *✧･ﾟ:* THANK YOU *:･ﾟ✧*:･ﾟ✧･ﾟ
-    
-         for visiting my
-       ASCII flower garden!
-    
-    ★ ♥ ★ ♥ ★ ♥ ★ ♥ ★ ♥ ★
-    
-        ,   __
-    ,__(^) / (^)      Made with ♥
-    /  \~`/ _`~`      
-  _(^)  |/_/,\`,       May your days
-,/ `~\ ,|/ \  (^)      be filled with
-(^)  ,\ |  (^)`~`      muguet magic!
-`~`    \|` `~`
-       ,|/lc
-    ~"^"~"^"~
-    
-    ♥ ★ ♥ ★ ♥ ★ ♥ ★ ♥ ★ ♥
-</pre>
-        </div>
-
-        <div class="center">
+        <div class="click-prompt" onclick="startReading()">
 <pre>
 ╔════════════════════════════════════════╗
-║  Last Updated: May 2026 | ASCII 4EVER  ║
+║                                        ║
+║     → CLICK HERE TO BEGIN ←            ║
+║                                        ║
 ╚════════════════════════════════════════╝
 </pre>
         </div>
 
+        <div id="content" class="hidden">
+            
+            <div id="fact-0" class="box">
+                <div class="center">
+<pre>★ THE MAY 1ST TRADITION ★</pre></div>
+<pre>
+    May 1st in France:
+    
+    Person A hands lily → Person B
+         🌸 → 😊
+    = Good luck all year!
+</pre>
+                <p>
+In France, May 1st is "La Fête du Muguet"—The Lily of the Valley Festival.
+Since 1561, people exchange these delicate flowers for good luck.
+                </p>
+                <p>
+On this day, anyone can sell flowers on the streets without a license.
+Vendors set up everywhere, and the tradition is simple: give someone
+a sprig of muguet, and they'll have happiness for the whole year.
+                </p>
+                <p style="border-top: 1px solid white; padding-top: 15px; margin-top: 15px;">
+When I think of traditions—small rituals that mark time, that say
+"this matters"—I think of us. The way I always tell you when I get home.
+The way you ask what I ate that day. Our late-night calls that stretch
+until one of us can barely keep our eyes open.
+                </p>
+                <p>
+If I could start a tradition, it would be this: every May 1st, wherever
+we are in the world, I want to find you lily of the valley. A promise
+of good luck, yes. But also a reminder that you make every day feel
+like the return of happiness.
+                </p>
+            </div>
+
+            <div id="fact-1" class="box">
+                <div class="center">
+<pre>★ WHAT'S YOUR FAVOURITE COLOUR TODAY? ★</pre></div>
+<pre>
+    Lily colours:
+    
+    ○ white    (most common)
+    ○ cream    (classic)
+    ○ pink     (rare "Rosea")
+</pre>
+                <p>
+Lily of the valley comes in shades of white and cream, occasionally
+a rare pink variety called "Rosea." They're delicate, bell-shaped,
+and impossibly fragrant.
+                </p>
+                <p>
+You once asked me what my favourite colour was that day. The next day,
+you brought me flowers in that exact shade of lavender-pink. I painted
+my nails to match, diffused with black—the colour I've always believed
+holds the two of us.
+                </p>
+                <p style="border-top: 1px solid white; padding-top: 15px; margin-top: 15px;">
+When your hair was bleach-blonde, the colour and texture of straw,
+I thought you looked like someone from a film. Then you came back
+to me with brown hair, then black. You've only known me with my hair
+like this—not the pink, purple, orange, red that no longer concern me,
+except as tones in the Hong Kong sunsets you said were most beautiful.
+                </p>
+                <p>
+I asked for flowers in that purple-orange blend that stains the sky
+at dusk, and you gave me the heaviest bouquet I've ever held.
+You asked which blooms I loved, what might last. 
+                </p>
+                <p>
+If colour is how we speak to each other, then let me learn your language.
+If dark green is your favourite, I'll search for it everywhere.
+If I am white to you, I'll learn all its names: milk, bone, shell, linen.
+If we are black together, I'll keep wearing it—ink, velvet, night, charcoal—
+just to say yes again.
+                </p>
+            </div>
+
+            <div id="fact-2" class="box">
+                <div class="center">
+<pre>★ POISONOUS BEAUTY ★</pre></div>
+<pre>
+    WARNING!
+    
+    ☠ All parts toxic ☠
+    
+    Look: ✓
+    Touch: ✗
+    Eat: ✗✗✗
+</pre>
+                <p>
+Despite its delicate appearance, lily of the valley is highly toxic.
+Every part contains cardiac glycosides that can cause serious harm.
+Look, but don't touch. Admire, but don't consume.
+                </p>
+                <p style="border-top: 1px solid white; padding-top: 15px; margin-top: 15px;">
+Loving you has felt dangerous in the most wonderful way. The kind
+of danger that makes my hands shake when I'm about to see you.
+The kind that keeps me up at night, heart racing, just thinking
+about the next time I'll hear your voice.
+                </p>
+                <p>
+You told me I could be "unhealthily obsessed" with you, like the book
+I mentioned. Honestly, I could. I just haven't been letting myself.
+Though I'm giving myself a trial run by how much I write about you...
+                </p>
+                <p>
+There are so many things I dislike about myself. I'm vain but not
+pretty enough to justify it. I'm always anxious. My mind is a pit
+I fall into again and again. I'm clingy. I push people away with
+my inability to forgive. I'm lazy. I'm uncertain about everything.
+                </p>
+                <p>
+But you—you look at me like I'm something precious. You tell me
+you love everything about me. When I asked why, you just said it
+so simply, as if it were obvious. As if loving me were the easiest
+thing in the world.
+                </p>
+                <p>
+Maybe that's the real danger: that you make me want to be gentle
+with myself, too.
+                </p>
+            </div>
+
+            <div id="fact-3" class="box">
+                <div class="center">
+<pre>★ RARE AND HARD TO COME BY ★</pre></div>
+<pre>
+    Lily of the valley:
+    
+    Shade? ✓ No problem!
+    Cold?  ✓ Tough survivor
+    Spreads underground
+    Always comes back
+</pre>
+                <p>
+Lily of the valley is tougher than it looks. It spreads through
+underground rhizomes and thrives in shade where other plants struggle.
+It can survive harsh winters and come back year after year.
+                </p>
+                <p style="border-top: 1px solid white; padding-top: 15px; margin-top: 15px;">
+In Cantonese, you used a word that means rare, hard to come by,
+when you talked about us. 難得. I looked it up later to make sure
+I understood exactly what you meant.
+                </p>
+                <p>
+When I think of probabilities—how, in a city of over seven million,
+I happened upon you. Among dozens of people I'd encountered, why were
+you the single person I was struck by? That first night, my expectationless
+self found even that expectation flipped over my head.
+                </p>
+                <p>
+The way you were fixated on me. Your arm draped around me. Even my
+friend observed it. After those first seconds, you sealed a fate
+in which I could never not care about you.
+                </p>
+                <p>
+And then, by pure chance, we crossed paths on Christmas Day—me
+descending, you climbing the same staircase at the exact same moment.
+I should have pulled you in by your collar and kissed you.
+                </p>
+                <p>
+For the odds that conspired to bring me to you, I am grateful.
+Is it all just probability, or could there be fate? What I'm trying
+to say is: you make me believe in fate.
+                </p>
+            </div>
+
+            <div id="fact-4" class="box">
+                <div class="center">
+<pre>★ THE LANGUAGE OF FLOWERS ★</pre></div>
+<pre>
+    Victorian meaning:
+    
+    "You've made my
+     life complete"
+    
+    ♥ ♥ ♥
+</pre>
+                <p>
+In the Victorian language of flowers, lily of the valley means
+"you've made my life complete" and symbolizes the return of happiness,
+sweetness, and humility.
+                </p>
+                <p style="border-top: 1px solid white; padding-top: 15px; margin-top: 15px;">
+I want to explain you in a way that would make everyone love you,
+but the problem is that loving is something we all do alone and
+through different sets of eyes. (That's from "Our Wives Under the Sea,"
+which I keep thinking about.)
+                </p>
+                <p>
+How tragic that I can't capture you with words! When I speak about
+you to my friends, I can't convey the full goodness and delight of you.
+How I fail at explaining why I'm so smitten!
+                </p>
+                <p>
+So let me try to explain what loving you feels like for me:
+                </p>
+                <p>
+It's the way I constantly want to get you gifts. The ideas don't stop!
+I see something and think "he would like this." Even after giving you
+something, it doesn't feel like enough.
+                </p>
+                <p>
+It's my desire to know everything about you. What you think, how your
+day went, what you ate, did you sleep well. I'm curious, and I worry
+about you.
+                </p>
+                <p>
+You're always on my mind. My mind is noisy, with several lines of
+thought running at once, so you occupy a permanent spot. It means
+I always miss you. I've numbed it to feel like a dull ache, but if
+someone asked what I want most, the answer is always ready.
+                </p>
+                <p>
+You have such a hold over me that I could never say no. You've made
+me do things that wracked me with nerves, but I trust you fully.
+I know I'd be safe in your hands.
+                </p>
+            </div>
+
+            <div id="fact-5" class="box">
+                <div class="center">
+<pre>★ SWEET SCENT, IMPOSSIBLE TO CAPTURE ★</pre></div>
+<pre>
+    The perfume problem:
+    
+    Natural extraction → nearly impossible
+    Solution → synthetic recreation
+    
+    Famous lily perfumes:
+    Dior | Chanel | Guerlain
+</pre>
+                <p>
+Lily of the valley has one of the most beloved fragrances in perfumery.
+Its sweet, fresh scent is nearly impossible to extract naturally,
+so perfumers usually recreate it synthetically. Dior, Chanel, and
+Guerlain have all made famous muguet perfumes.
+                </p>
+                <p style="border-top: 1px solid white; padding-top: 15px; margin-top: 15px;">
+Maybe I could write more beautifully if I could remember you more clearly.
+I would be able to do you justice—set my pen to paper with a jeweller's
+precision, cutting facets into the illustrious, radiant effects you
+spark in me.
+                </p>
+                <p>
+Each passing day, as I draw nearer to the possibility of us inhabiting
+the same room again—breathing the same air, close enough for our
+breath to mingle when we kiss—devastatingly, I am beginning to forget you.
+                </p>
+                <p>
+I can summon the scenes where you kissed me. I can name the place,
+the hour, the Friday buzz around us. But the feeling itself refuses me.
+I can no longer remember the exact texture, the pressure, the living
+movement of your lips on mine.
+                </p>
+                <p>
+Perhaps you'll have to kiss me again, if only to remind me. Touch me
+until your fingerprints have imprinted on me. Let your presence abide
+with me long enough that my body is spoiled and re-tuned to your nearness.
+                </p>
+                <p>
+Then, when I'm near you once more, I will write you clearly from
+the breathing present.
+                </p>
+            </div>
+
+            <div id="fact-6" class="box">
+                <div class="center">
+<pre>★ BELL-SHAPED BEAUTIES ★</pre></div>
+<pre>
+    Each stem:
+    
+       o  o  o
+      o  o  o  o
+     o  o  o  o  o
+    
+    5-15 tiny bell flowers
+    Bloom: late spring
+    Duration: 3-4 weeks only
+</pre>
+                <p>
+Each stem produces 5-15 tiny bell-shaped flowers. They bloom in late
+spring and usually last only 3-4 weeks. Brief, but unforgettable.
+                </p>
+                <p style="border-top: 1px solid white; padding-top: 15px; margin-top: 15px;">
+Everything with you feels finite. Each bouquet you bring, each one
+you send—the moment it's in my arms, I begin a small mourning.
+If only I could keep a garden always in view, not just when I stagger
+home at night or through the squint of morning light.
+                </p>
+                <p>
+On the phone, if I'm careless and my eye catches the time, the countdown
+begins. Even if I push it—twelve-thirty to one, one to four—the end
+hovers, patient and inevitable. I dread the click of our goodbye,
+sometimes before we've even begun.
+                </p>
+                <p>
+I've gotten used to nights with you that stretch into the early hours.
+What will it be like to share a whole day together? Where will our
+conversations wander? What will your expressions reveal when you take
+a bite of something delicious?
+                </p>
+                <p>
+How will your voice sound when you see me again? I'm smiling foolishly
+just thinking about it. I can already hear you calling me "baby" and
+telling me those three words I never get tired of hearing.
+                </p>
+            </div>
+
+            <div id="fact-7" class="box">
+                <div class="center">
+<pre>★ MARKS OF LOVE ★</pre></div>
+<pre>
+    Preservation methods:
+    
+    Press in book → shape stays
+    (but scent fades)
+    
+    A delicate ghost
+    of what it once was
+</pre>
+                <p>
+When pressed in a book, lily of the valley can be preserved for years,
+though its scent fades. The shape remains—a delicate ghost of what
+it once was.
+                </p>
+                <p style="border-top: 1px solid white; padding-top: 15px; margin-top: 15px;">
+Your love marks me painfully. It's the crick in my neck from calling
+you in bed, neck crooked at an awkward angle to make sure the microphone
+catches every word.
+                </p>
+                <p>
+Your love dents my palms—two half-moons from my nails as I grip my
+pen incorrectly and write about you. Pages and pages, day after day.
+When I told you, you said you've tattooed me.
+                </p>
+                <p>
+Your love is stashed in my book. I hastily stuffed our photobooth strip
+between the pages—of course, the random book I plucked is my favourite
+novel. I flip through to find you again and let you stay there.
+                </p>
+                <p>
+Your love drapes itself over me after sleepless nights spent calling you.
+A fatigue that weighs down my limbs. I drag it through the workday and
+into the night. It feels worth it, because sometimes you say something
+so sweet during those late hours—so exact—that I think: if I were asleep,
+I would have missed this.
+                </p>
+                <p>
+Your love tallies itself in my notebook. I'm running out of pages.
+My favourite brown pen is almost empty. Your Christmas card is the most
+I've ever written to anyone—so much to say that I ran out of space
+and flipped it over.
+                </p>
+            </div>
+
+            <div id="fact-8" class="box">
+                <div class="center">
+<pre>★ FINAL FACT: WHAT IT ALL MEANS ★</pre></div>
+<pre>
+        ,   __
+    ,__(^) / (^)
+    /  \~`/ _`~`
+  _(^)  |/_/,\`,
+,/ `~\ ,|/ \  (^)
+(^)  ,\ |  (^)`~`
+`~`    \|` `~`
+       ,|/lc
+    ~"^"~"^"~
+    
+    Symbolizes:
+    The return of happiness
+</pre>
+                <p>
+Lily of the valley is Kate Middleton's favourite flower. She carried
+it in her wedding bouquet. It symbolizes the return of happiness.
+                </p>
+                <p style="border-top: 1px solid white; padding-top: 15px; margin-top: 15px;">
+Nick,
+                </p>
+                <p>
+Since we reconnected, nearly everything I've written has been about you.
+My first poem came from an insuppressible urge to give shape to feelings
+that felt like they would explode. Now, every poem after is you.
+                </p>
+                <p>
+I call you my muse. You are my fuel. You are the reason I've written
+thousands upon thousands of words. My writing is how I try to immortalise
+what feels unbearably precious.
+                </p>
+                <p>
+If I could, I would transcribe every exchange, film every memory,
+photograph every smile, catalogue every sensation. I would return
+to them at will and feel again the beautiful feelings you've been
+generous enough to give me.
+                </p>
+                <p>
+You told me you are in love with me, and I wonder what that feels
+like for you. All I know is what it feels like for me:
+                </p>
+                <p>
+It's a spark in my chest—a quiet, constant hum that sometimes explodes.
+It propels me to tell you "I love you" as emotional release. When I'm
+alone, it turns into fuel. With that steady buzz inside me, I realise
+I don't say those three words as often as I feel them. I mistake that
+constant feeling for my default state of being.
+                </p>
+                <p>
+You, Nick, are my favourite person. It's scary to admit, because it
+gives you power over me. My usual will just crumbles when it comes
+to you. But even knowing the danger, I choose this.
+                </p>
+                <p>
+I love you with constancy. Day after day, I choose you.
+                </p>
+                <p>
+You are the greatest treasure in my life. My boyfriend, whom I love
+so much. You, who now feels like a part of me. The best part of me.
+The most precious and loved part.
+                </p>
+                <p>
+If loving you was all I needed to feed myself, I would be stuffed
+and full. Because together, we are delighted, gay, happy.
+                </p>
+                <p style="text-align: center; margin-top: 30px;">
+                    — Your Rachel ♥
+                </p>
+            </div>
+
+            <div class="navigation">
+                <button id="prevBtn" onclick="previousFact()">← PREVIOUS</button>
+                <button id="nextBtn" onclick="nextFact()">NEXT →</button>
+            </div>
+
+            <div class="center" style="margin-top: 30px;">
+<pre>
+    ★ ♥ ★ ♥ ★ ♥ ★ ♥ ★
+    
+         for Nick
+      (my sunshine)
+    
+    ♥ ★ ♥ ★ ♥ ★ ♥ ★ ♥
+</pre>
+            </div>
+
+        </div>
+
     </div>
+
+    <script>
+        let currentFact = -1;
+        const totalFacts = 9;
+
+        function startReading() {
+            document.getElementById('intro').classList.add('hidden');
+            document.querySelector('.click-prompt').classList.add('hidden');
+            document.getElementById('content').classList.remove('hidden');
+            currentFact = 0;
+            showFact(0);
+        }
+
+        function showFact(index) {
+            // Hide all facts
+            for (let i = 0; i < totalFacts; i++) {
+                document.getElementById('fact-' + i).classList.remove('active');
+            }
+            
+            // Show current fact
+            document.getElementById('fact-' + index).classList.add('active');
+            
+            // Update buttons
+            document.getElementById('prevBtn').disabled = (index === 0);
+            document.getElementById('nextBtn').disabled = (index === totalFacts - 1);
+            
+            // Scroll to top
+            window.scrollTo(0, 0);
+        }
+
+        function nextFact() {
+            if (currentFact < totalFacts - 1) {
+                currentFact++;
+                showFact(currentFact);
+            }
+        }
+
+        function previousFact() {
+            if (currentFact > 0) {
+                currentFact--;
+                showFact(currentFact);
+            }
+        }
+    </script>
 </body>
 </html>
