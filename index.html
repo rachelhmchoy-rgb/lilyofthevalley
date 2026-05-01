@@ -57,10 +57,11 @@
         .click-prompt {
             border: 3px double white;
             padding: 20px;
-            margin: 20px 0;
+            margin: 20px auto;
             text-align: center;
             cursor: pointer;
             transition: all 0.3s;
+            max-width: 400px;
         }
         
         .click-prompt:hover {
@@ -165,15 +166,13 @@ Click below to read about lily of the valley.<br>
         </div>
 
         <div class="click-prompt" onclick="startReading()">
-            <div class="center">
 <pre>
-╔════════════════════════════════════════╗
-║                                        ║
-║     → CLICK HERE TO BEGIN ←            ║
-║                                        ║
-╚════════════════════════════════════════╝
+╔══════════════════════════════╗
+║                              ║
+║   → CLICK HERE TO BEGIN ←    ║
+║                              ║
+╚══════════════════════════════╝
 </pre>
-            </div>
         </div>
 
         <div id="content" class="hidden">
